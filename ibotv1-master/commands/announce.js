@@ -15,7 +15,7 @@ exports.run = (Discord, client, message, args) => {
 		   .setDescription("**Announced by: " + message.author + "**\n\n" + text + "\n")
 		   .setFooter("An announcment made at ")
 		   .setTimestamp()
-		   let staffc = channelsend
+		   let staffc = message.guild.channels.find("name", channelsend)
 		   staffc.sendMessage({embed});
 	   
 }
