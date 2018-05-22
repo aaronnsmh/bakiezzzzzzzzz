@@ -12,13 +12,13 @@ exports.run = async (Discord, client, message, args) => {
 
     await (staffc.send("A gamenight has been scheduled!\n Game:" + game"\n Time From Now:" + ms(mutetime));
     message.reply("Gamenight has been created for" + ms(mutetime) + "from now!");
-    let announcetwo = mutetime/2
+    let announcetwo = mutetime-600000
     setTimeout(function() {
-        message.channel.send(`<@${tomute.id}> has been unmuted!`);
+        message.channel.send(`announce 2`);
     }, ms(announcetwo));
     
     setTimeout(function() {
-        message.channel.send(`<@${tomute.id}> has been unmuted!`);
+        message.channel.send(`event start!`);
     }, ms(mutetime));
 
 }
