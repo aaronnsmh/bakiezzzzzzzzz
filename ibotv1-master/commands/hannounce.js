@@ -15,7 +15,7 @@ exports.run = (Discord, client, message, args) => {
 		   .setFooter("An announcment made at ")
 		   .setTimestamp()
 		   message.delete(10)
-		   message.channel.send("@everyone")
+		   message.channel.send("@here")
 		   message.channel.send({embed})
 	   
 }
