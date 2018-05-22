@@ -23,6 +23,7 @@ exports.run = async (Discord, client, message, args) => {
     .addField("Game:", game)
     .addField("Time (from now):", ms(mutetime))
     .addField("Host:", host)
+    .setColour(a9d9db)
 
     staffc.send(emebedannounce);
     message.reply("Gamenight has been created for: " + ms(mutetime) + "ms from now! Announcement should be pushed out.");
@@ -37,6 +38,7 @@ exports.run = async (Discord, client, message, args) => {
 .addField("Host:", host)
 .addField("Game:", game)
 .addField("Link:", link)
+.setColour(a9d9db)
 
         message.channel.send(emebedbefore);
     }, ms(announcetwo));
@@ -49,6 +51,7 @@ exports.run = async (Discord, client, message, args) => {
 .setThumbnail(icon)
 .setDescription("The gamenight is now starting!")
 .addField("Join Here:", link)
+.setColour(a9d9db)
 
 message.channel.send(emebedstart);
         
