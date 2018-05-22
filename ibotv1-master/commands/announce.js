@@ -1,6 +1,6 @@
 exports.run = (Discord, client, message, args) => {
 
-       
+        let allowedRole = message.guild.roles.find("name", "[-] Perm");
 	if(message.member.roles.has(allowedRole.id)) return message.channel.send("You need the [-] Perm role to run this comamnd!")
 	
 		   const color = args[0]
