@@ -36,7 +36,7 @@ exports.run = async (Discord, client, message, args) => {
 .setDescription("The gamenight is due to be hosted in 5 minutes! Keep an eye out!")
 .addField("Host:", host)
 .addField("Game:", game)
-.addField("Link:" link)
+.addField("Link:", link)
 
         message.channel.send(emebedbefore);
     }, ms(announcetwo));
