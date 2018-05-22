@@ -4,7 +4,7 @@ exports.run = (Discord, client, message, args) => {
 		   let channel1 = message.mentions.channels.first()
 		   const color = args[0]
 		   let title = args[1];
-		   if (title.content == "mod") let icon = "https://media.discordapp.net/attachments/448221913978896387/448514229780086785/mod.png"
+		   if (title.content == "mod") let icon = "https://media.discordapp.net/attachments/448221913978896387/448514229780086785/mod.png";
 		   const text = args.slice(2).join(" ");
 		   const author = message.author;
 		   if (text.length < 1) return message.channel.send("Can not announce nothing");
