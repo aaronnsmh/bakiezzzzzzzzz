@@ -4,7 +4,8 @@ const ms = require("ms");
 exports.run = async (Discord, client, message, args) => {
     let staffc = message.mentions.channels.first()
     if (!staffc) return message.channel.send("I can not find the gamenight channel!");
-    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Sorry, but you do not have valid permissions! If you beleive this is a error, contact an owner.");
+    let allowedRole = message.guild.roles.find("name", "[-] Perm");
+	if(!message.member.roles.has(allowedRole.id)) return message.channel.send("You have invalid permissions!")
     
 
     let mutetime = args[1];
