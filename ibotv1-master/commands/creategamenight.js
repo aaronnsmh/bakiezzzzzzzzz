@@ -7,7 +7,7 @@ exports.run = async (Discord, client, message, args) => {
     let allowedRole = message.guild.roles.find("name", "[-] Perm");
 	if(!message.member.roles.has(allowedRole.id)) return message.channel.send("You have invalid permissions!")
     
-
+    let icon = "https://media.discordapp.net/attachments/448221913978896387/448515840606863370/reg.png";
     let mutetime = args[1];
     let game = args[2];
     let host = message.author;
@@ -18,7 +18,7 @@ exports.run = async (Discord, client, message, args) => {
         
     .setFooter("Bakiez Gamenight | Copyright 2018")
     .setTitle("Bakiez Gamenight Announcement")
-    .setThumbnail(media.discordapp.net/attachments/448221913978896387/448515840606863370/reg.png)
+    .setThumbnail(icon)
     .setDescription("Bakiez is having a gamenight! Check back here before it starts for a link!")
     .addField("Game:", game)
     .addField("Time (from now):", ms(mutetime))
@@ -32,7 +32,7 @@ exports.run = async (Discord, client, message, args) => {
         
 .setFooter("Bakiez Gamenight | Copyright 2018")
 .setTitle("Bakiez Gamenight Announcement")
-.setThumbnail(media.discordapp.net/attachments/448221913978896387/448515840606863370/reg.png)
+.setThumbnail(icon)
 .setDescription("The gamenight is due to be hosted in 5 minutes! Keep an eye out!")
 .addField("Host:", host)
 .addField("Game:", game)
@@ -46,7 +46,7 @@ exports.run = async (Discord, client, message, args) => {
         
 .setFooter("Bakiez Gamenight | Copyright 2018")
 .setTitle("Bakiez Gamenight Announcement")
-.setThumbnail(media.discordapp.net/attachments/448221913978896387/448515840606863370/reg.png)
+.setThumbnail(icon)
 .setDescription("The gamenight is now starting!")
 .addField("Join Here:", link)
 
