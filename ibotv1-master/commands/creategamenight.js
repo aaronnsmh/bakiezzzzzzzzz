@@ -40,7 +40,7 @@ exports.run = async (Discord, client, message, args) => {
 .addField("Link:", link)
 .setColor("#a9d9db")
 
-        message.channel.send(emebedbefore);
+        staffc.send(emebedbefore);
     }, ms(announcetwo));
     
     setTimeout(function() {
@@ -53,7 +53,7 @@ exports.run = async (Discord, client, message, args) => {
 .addField("Join Here:", link)
 .setColour("#a9d9db")
 
-message.channel.send(emebedstart);
+staffc.send(emebedstart);
         
     }, ms(mutetime));
 
