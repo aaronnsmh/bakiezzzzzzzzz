@@ -24,7 +24,7 @@ exports.run = async (Discord, client, message, args) => {
     .addField("Time (from now):", ms(mutetime))
     .addField("Host:", host)
 
-    staffc.send("**A gamenight has been scheduled!**\n \nGame: " + game + "\n Host: " + host + "\n Time From Now: " + ms(mutetime) + "ms"));
+    staffc.send(emebedannounce);
     message.reply("Gamenight has been created for: " + ms(mutetime) + "ms from now! Announcement should be pushed out.");
     let announcetwo = mutetime-300000
     setTimeout(function() {
