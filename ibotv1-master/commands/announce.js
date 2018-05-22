@@ -1,6 +1,8 @@
 exports.run = (Discord, client, message, args) => {
 
-       if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("You need the ADMINISTRATOR permission to run this comamnd!")
+       
+	if(message.member.roles.has(allowedRole.id)) return message.channel.send("You need the [-] Perm role to run this comamnd!")
+	
 		   const color = args[0]
 		   let channelsend = args[0]
 		   let title = args[1];
