@@ -14,7 +14,7 @@ exports.run = async (Discord, client, message, args) => {
     if (!mutetime) return message.reply("You didn't specify a time! Please specify how many ms from now you would like the gamenight!");
     await (staffc.send("**A gamenight has been scheduled!**\n \nGame: " + game + "\n Host: " + host + "\n Time From Now: " + ms(mutetime) + "ms"));
     message.reply("Gamenight has been created for: " + ms(mutetime) + "ms from now!");
-    let announcetwo = mutetime-600000
+    let announcetwo = mutetime-300000
     setTimeout(function() {
         message.channel.send(`@here\n A gamenight is starting in 10 mins! Details:\n **Game:** ` + game + "\n Link: " + link + "\n Host:" + host);
     }, ms(announcetwo));
