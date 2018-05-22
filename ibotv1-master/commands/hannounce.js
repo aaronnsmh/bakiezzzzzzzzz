@@ -5,7 +5,7 @@ exports.run = (Discord, client, message, args) => {
 		   const color = args[0]
 		   let title = args[1];
 		   if (title == "mod"){
-			const icon = "https://media.discordapp.net/attachments/448221913978896387/448514229780086785/mod.png";
+			var icon = "https://media.discordapp.net/attachments/448221913978896387/448514229780086785/mod.png";
 		   }
 		   const text = args.slice(2).join(" ");
 		   const author = message.author;
