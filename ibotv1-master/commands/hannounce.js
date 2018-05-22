@@ -1,7 +1,7 @@
 exports.run = (Discord, client, message, args) => {
 
        if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("You need the ADMINISTRATOR permission to run this comamnd!")
-		   let channel1 = message.guild.channels(message.mentions.channels.first()
+		   let channel1 = message.mentions.channels.first()
 		   const color = args[0]
 		   let title = args[0];
 		   const text = args.slice(1).join(" ");
