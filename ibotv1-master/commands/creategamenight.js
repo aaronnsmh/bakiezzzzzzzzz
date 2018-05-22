@@ -20,7 +20,7 @@ exports.run = async (Discord, client, message, args) => {
     }, ms(announcetwo));
     
     setTimeout(function() {
-        message.channel.send(`event start!`);
+        message.channel.send(`The gamenight is now starting! Join here: ` + link);
     }, ms(mutetime));
 
 }
