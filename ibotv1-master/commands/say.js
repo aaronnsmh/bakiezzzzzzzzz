@@ -1,7 +1,7 @@
 exports.run = (Discord, client, message, args) => {
 
 let sender = message.author;
-let allowedRole = message.guild.roles.find("name", "bot admin");
+
 let sendchannel = message.channel;
 
        let allowedRole = message.guild.roles.find("name", "[-] Perm");
