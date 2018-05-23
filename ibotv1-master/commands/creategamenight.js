@@ -40,9 +40,9 @@ exports.run = async (Discord, client, message, args) => {
 .addField("Game:", game)
 .addField("Link:", link)
 .setColor("#a9d9db")
-
-        staffc.send(emebedbefore);
+	
 	staffc.send("@here")
+        staffc.send(emebedbefore);
     }, uwot);
     
     setTimeout(function() {
