@@ -51,7 +51,7 @@ exports.run = async (Discord, client, message, args) => {
 .setThumbnail(icon)
 .setDescription("The gamenight is now starting!")
 .addField("Join Here:", link)
-.setColour("#a9d9db")
+.setColor("#a9d9db")
 
 staffc.send(emebedstart);
         
