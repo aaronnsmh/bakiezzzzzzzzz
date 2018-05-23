@@ -4,7 +4,8 @@ let sender = message.author;
 let allowedRole = message.guild.roles.find("name", "bot admin");
 let sendchannel = message.channel;
 
-       if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("wot u doin? this command is for kewl ppl only (If you think this is wrong, make sure you have the administrator discord permission)")
+       let allowedRole = message.guild.roles.find("name", "[-] Perm");
+if(!message.member.roles.has(allowedRole.id)) return message.channel.send("You have invalid permissions!")
 
         const sayMessage = args.join(" ");
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
