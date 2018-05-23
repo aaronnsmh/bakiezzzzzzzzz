@@ -28,7 +28,7 @@ exports.run = async (Discord, client, message, args) => {
     staffc.send(emebedannounce);
     message.reply("Gamenight has been created for: " + ms(mutetime) + "ms from now! Announcement should be pushed out.");
     let announcetwo = mutetime-300000
-    setTimeout(function0() {
+    setTimeout(function() {
         var emebedbefore = new Discord.RichEmbed()
         
 .setFooter("Bakiez Gamenight | Copyright 2018")
@@ -43,7 +43,7 @@ exports.run = async (Discord, client, message, args) => {
         staffc.send(emebedbefore);
     }, 1000);
     
-    setTimeout(function1() {
+    setTimeout(function() {
         var emebedstart = new Discord.RichEmbed()
         
 .setFooter("Bakiez Gamenight | Copyright 2018")
