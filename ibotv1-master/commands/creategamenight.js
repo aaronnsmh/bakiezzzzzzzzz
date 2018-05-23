@@ -28,6 +28,7 @@ exports.run = async (Discord, client, message, args) => {
     staffc.send(emebedannounce);
     message.reply("Gamenight has been created for: " + ms(mutetime) + "ms from now! Announcement should be pushed out.");
     let announcetwo = mutetime-300000
+    let uwot = mutetime-300000
     setTimeout(function() {
         var emebedbefore = new Discord.RichEmbed()
         
@@ -41,7 +42,8 @@ exports.run = async (Discord, client, message, args) => {
 .setColor("#a9d9db")
 
         staffc.send(emebedbefore);
-    }, 1000);
+	staffc.send("@here")
+    }, uwot);
     
     setTimeout(function() {
         var emebedstart = new Discord.RichEmbed()
@@ -55,6 +57,6 @@ exports.run = async (Discord, client, message, args) => {
 
 staffc.send(emebedstart);
         
-    }, 900);
+    }, mutetime);
 
 }
