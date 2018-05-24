@@ -9,9 +9,11 @@ exports.run = async (Discord, client, message, args) => {
     
     let icon = "https://media.discordapp.net/attachments/448221913978896387/448515840606863370/reg.png";
     let mutetime = args[1];
+    let time = ms(mutetime)
     let game = args[2];
     let host = message.author;
     let link = args [3];
+    let hours = time * 2.7E-7
     if (!mutetime) return message.reply("You didn't specify a time! Please specify how many ms from now you would like the gamenight!");
 
     var emebedannounce = new Discord.RichEmbed()
@@ -21,14 +23,14 @@ exports.run = async (Discord, client, message, args) => {
     .setThumbnail(icon)
     .setDescription("Bakiez is having a gamenight! Check back here before it starts for a link!")
     .addField("Game:", game)
-    .addField("Time (from now):", ms(mutetime))
+    .addField("Time (from now):", mutetime)
     .addField("Host:", host)
     .setColor("#a9d9db")
 
     staffc.send(emebedannounce);
-    message.reply("Gamenight has been created for: " + ms(mutetime) + "ms from now! Announcement should be pushed out.");
+    message.reply("Gamenight has been created for: " + mutetime + " from now! Announcement should be pushed out.");
     let announcetwo = mutetime-300000
-    let uwot = mutetime-300000
+    let uwot = time-300000
     setTimeout(function() {
         var emebedbefore = new Discord.RichEmbed()
         
@@ -57,6 +59,6 @@ exports.run = async (Discord, client, message, args) => {
 
 staffc.send(emebedstart);
         
-    }, mutetime);
+    }, time);
 
 }
