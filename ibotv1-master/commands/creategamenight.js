@@ -13,7 +13,7 @@ exports.run = async (Discord, client, message, args) => {
     let game = args[2];
     let host = message.author;
     let link = args [3];
-    let hours = time * 2.7777777777778E-7
+    let hours = time * 2.7E-7
     if (!mutetime) return message.reply("You didn't specify a time! Please specify how many ms from now you would like the gamenight!");
 
     var emebedannounce = new Discord.RichEmbed()
