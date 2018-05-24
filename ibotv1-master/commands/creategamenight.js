@@ -23,12 +23,12 @@ exports.run = async (Discord, client, message, args) => {
     .setThumbnail(icon)
     .setDescription("Bakiez is having a gamenight! Check back here before it starts for a link!")
     .addField("Game:", game)
-    .addField("Time (from now):", hours)
+    .addField("Time (from now):", mutetime)
     .addField("Host:", host)
     .setColor("#a9d9db")
 
     staffc.send(emebedannounce);
-    message.reply("Gamenight has been created for: " + hours + "h from now! Announcement should be pushed out.");
+    message.reply("Gamenight has been created for: " + mutetime + " from now! Announcement should be pushed out.");
     let announcetwo = mutetime-300000
     let uwot = time-300000
     setTimeout(function() {
