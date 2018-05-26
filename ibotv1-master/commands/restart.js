@@ -8,7 +8,9 @@ exports.run = (client, message, args) => {
       
     
 
-  } else return;
+  } else {
+      
+      return;
       
 }             
   
