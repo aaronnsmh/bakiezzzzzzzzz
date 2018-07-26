@@ -15,6 +15,10 @@ exports.run = (Discord, client, message, args) => {
 			var icon = "https://media.discordapp.net/attachments/448221913978896387/448515839239389184/management.png";
 			var color = "#c59989";
 			   var text = args.slice(2).join(" ");
+		   } else if (title == "studios"){
+			var icon = "https://cdn.discordapp.com/attachments/421833835114922006/472112160793952256/21c0ebb659623eb8bf7ed264dd6f4884.png";
+			var color = "#efefef";
+			   var text = args.slice(2).join(" ");
 		   } else if (title == "operation"){
 			var icon = "https://media.discordapp.net/attachments/448221913978896387/448515840154009622/operations.png";
 			var color = "#c1b6b4";
