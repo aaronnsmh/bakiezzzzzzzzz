@@ -41,7 +41,8 @@ exports.run = (Discord, client, message, args) => {
 		   .setDescription("**Announced by: " + message.author + "**\n\n" + text + "\n")
 		   .setFooter("An announcment made at ")
 		   .setTimestamp()
-		   message.delete(10)
-		   channel1.send({embed})
+		   message.delete(10).catch(console.error);
+		   channel1.send({embed}).catch(console.error);
+			
 	   
 }
